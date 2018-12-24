@@ -1,0 +1,38 @@
+spring:
+
+
+  #Spring 会话设置
+#  session:
+#    store-type: redis
+#    redis:
+#      ## Sessions flush mode.这个参数是可选的
+#      flush-mode: ON-SAVE
+#      # Namespace for keys used to store sessions.
+#      namespace: spring-session
+
+#Server 配置
+server:
+  port: 8081
+
+
+management:
+  allowacessip:
+    - '10.168.12.70'
+#  server:
+#    address: 127.0.0.1
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  #  contextPath: /management
+#  security:
+#    enabled: false
+
+
+
+automonitor:
+  selfprotection:
+    striking-threshold: 4
+    restore-threshold: 1
+    retry-interval: 1000
+
